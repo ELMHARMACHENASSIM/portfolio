@@ -14,11 +14,11 @@
 }
 @font-face {
   font-family: mainFont;
-  src: url(/font/Akira.otf);
+  src: url(../font/Akira.otf);
 }
 @font-face {
   font-family: secfont;
-  src: url(/font/Ordinary.ttf);
+  src: url(../font/Ordinary.ttf);
 }
 * {
   padding: 0;
