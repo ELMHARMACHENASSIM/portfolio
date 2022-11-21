@@ -3,13 +3,13 @@
 :root {
   --main-color: #1b2430;
   --sec-color: #ffffff;
-  --hover-sec-color: #f8bc62;
+  --hover-sec-color: #c9c9c9;
   --hover-main-color: #5b6e88;
 }
 .light {
   --main-color: #ffffff;
   --sec-color: #1b2430;
-  --hover-main-color: #f8bc62;
+  --hover-main-color: #c9c9c9;
   --hover-sec-color: #5b6e88;
 }
 @font-face {
@@ -39,6 +39,7 @@ body {
   background-color: var(--main-color);
   color: var(--sec-color);
   font-family: mainFont;
+  overflow: hidden;
 }
 
 .container {
@@ -88,6 +89,53 @@ body {
     width: 375px;
   }
 }
+#loading{
+  position: fixed;
+background-color: var(--main-color);
+width: 100%;
+height: 100vh;
+z-index: 100;
+
+}
+#loading .tit{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+#loading .tit h1{
+ font-size: 40px;
+}
+.tit > span{
+font-size: 55px;
+ }
+  .bounce1 {
+    animation: sk-bouncedelay 1.4s infinite ease both ; 
+
+  animation-delay: -0.32s;
+}
+ .bounce2 {
+  animation: sk-bouncedelay 1.4s infinite ease both ;
+ 
+  animation-delay: -0.16s;
+}
+.bounce3 {
+  animation: sk-bouncedelay 1.4s infinite ease both ;
+ 
+  animation-delay: -0.08s;
+}
+@keyframes sk-bouncedelay {
+  0%
+  {
+opacity: 1;
+  }
+  100%
+  {
+    opacity: 0;
+  }
+}
+
+
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
   .container {
@@ -501,19 +549,7 @@ header .container .icon:hover {
   width: 400px;
   height: 400px;
 }
-.aboutme .container .image::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-image: url(/img/fld.jpg);
-  mix-blend-mode: difference;
-  opacity: 0;
-  transition: 0.5s;
-}
-.aboutme .container .image:hover:before {
-  opacity: 1;
-}
+
 .aboutme .container .image img {
   width: 100%;
   height: 100%;
