@@ -57,8 +57,8 @@ submit.addEventListener("submit", (e) => {
   }).then((message) => alert(message));
 });
 
-let loader = document.getElementById("loading");
+/*let loader = document.getElementById("loading");
 window.addEventListener("load", function(){
 body.style.overflow="auto";
 loader.style.display = "none";
-})
+})*/

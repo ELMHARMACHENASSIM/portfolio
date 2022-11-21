@@ -134,7 +134,19 @@ opacity: 1;
     opacity: 0;
   }
 }
-
+@media (max-width: 767px) {
+  #loading .tit{
+    text-align: center;
+   
+width: 100%;
+  }
+  #loading .tit h1{
+    font-size: 20px;
+   }
+   .tit > span{
+   font-size: 30px;
+    }
+}
 
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
